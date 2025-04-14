@@ -49,8 +49,7 @@ export function generateStaticParams() {
   }));
 }
 
-// ✅ Make this async
-export default async function BlogPage({ params }: { params: { id: string } }) {
+export default  function BlogPage({ params }: { params: { id: string } }) {
   // Simulate await for future data fetching compatibility
   const blog = blogs.find((blog) => blog.id == params.id);
   
